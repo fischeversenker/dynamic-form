@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>dynamic form</title>
+  <script src="main.js"></script>
+  <style>
+    .add-cell {
+      float: right;
+    }
+    input {
+      width: 50px;
+    }
+    .section {
+      margin: 20px 0;
+    }
+    #rows {
+      max-width: 400px;
+      padding: 5px 0;
+    }
+    #request {
+      background-color: #eee;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class='section'>
+    <form action="/" id='form' method="POST">
+      <div id="rows"></div>
+      <button id='add-row' type='button'>+ row</button>
+      <button type="submit">submit</button>
+    </form>
+  </div>
+
+  <div class='section'>
+    last request:
+    <pre id="request"></pre>
+  </div>
+</body>
+</html>
